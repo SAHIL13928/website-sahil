@@ -25,10 +25,12 @@ const Navbar = () => {
                     backgroundImage: 'none',
                     mt: 2,
 
+
                 }}
             >
-                <Container maxWidth="lg">
+                <Container maxWidth="lg" >
                     <Toolbar
+                        elevation={10}
                         variant="regular"
                         sx={(theme) => ({
                             display: 'flex',
