@@ -2,6 +2,7 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import Footer from "./components/Footer";
+import Chat from "./components/Chat";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <Footer />
-
+      <Chat />
     </div>
   );
 }
