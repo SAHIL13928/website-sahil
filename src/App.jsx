@@ -1,12 +1,9 @@
-import React from 'react';
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
 import Footer from "./components/Footer";
-import Chat from "./components/Chat";
 import ContactUs from "./components/ContactUs";
-import HeroSection2 from './components/HeroSection2';
-import Services from './components/Services';
+import Home from './components/Home';
 
 const App = () => {
   return (
@@ -14,14 +11,10 @@ const App = () => {
       <div className="hero-section-background">
         <Navbar />
         <Routes>
-          <Route path="/" element={<HeroSection />} />
+          <Route path="/" element={<Home />} />
           <Route path="/contact" element={<ContactUs />} />
         </Routes>
-
-        <HeroSection2/>
-        <Services/>
-        
-        
+        <Footer />
       </div>
     </Router>
   );
