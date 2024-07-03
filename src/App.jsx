@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
+import Footer from "./components/Footer";
+import Chat from "./components/Chat";
 import ContactUs from "./components/ContactUs";
 import HeroSection2 from './components/HeroSection2';
 import Services from './components/Services';
