@@ -1,11 +1,13 @@
-
+import React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+
+// Import the background image
+import backgroundImage from '../assests/background.jfif'; // Adjust the path as needed
 
 const HeroSection = () => {
     return (
@@ -13,8 +15,9 @@ const HeroSection = () => {
             id="hero"
             sx={() => ({
                 width: '100%',
-                backgroundSize: '100% 20%',
+                backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
             })}
         >
             <Container
@@ -69,19 +72,15 @@ const HeroSection = () => {
                             fullWidth
                             hiddenLabel
                             sx={{ width: "28rem" }}
-
                             variant="outlined"
                             aria-label="Enter your email address"
                             placeholder="Your email address"
-
                         />
                         <Button disableElevation sx={{ width: "8rem", }} variant="contained" color="primary">
                             Start now
                         </Button>
                     </Stack>
-
                 </Stack>
-
             </Container>
         </Box>
     );
