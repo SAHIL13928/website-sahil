@@ -131,9 +131,9 @@ const Navbar = () => {
                   />
                 </Link>
                 <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                  <MenuItem sx={{ py: '6px', px: '12px' }}>
+                  <MenuItem sx={{ py: '6px', px: '12px', bgcolor: "blue", color: "white", borderRadius: "16px", fontWeight: "bolder" }}>
                     <Link to="/contact" style={{ textDecoration: 'none' }}>
-                      <Typography variant="body2" color="text.primary">
+                      <Typography variant="body2" >
                         Consult an Expert
                       </Typography>
                     </Link>

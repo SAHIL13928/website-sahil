@@ -1,0 +1,80 @@
+.faq-section {
+  background-color: #eeeedd66;
+  padding: 4rem 0 4rem;
+}
+
+.faq-section .title {
+  font-size: 2.6vw;
+  font-family: Denton-Bold, Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+.accordion-container {
+  width: 80%;
+  margin: auto;
+}
+
+.acc-item {
+  border-bottom: 1px solid #f7c1be;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.acc-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.acc-button h1 {
+  font-family: Denton-light, Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  font-size: 1.6vw;
+  color: #444444;
+  font-weight: 400;
+}
+
+.acc-answer {
+  font-size: 1.2vw;
+  line-height: 2rem;
+  margin: 2vh 8vw 2vh 3.5vw;
+  color: #777777;
+  font-family: "Helvetica Neue", Helvetica, Inter, system-ui, Avenir, Arial,
+    sans-serif;
+}
+
+.faq-section .footer-title {
+  font-size: 2vw;
+  color: black;
+  text-align: center;
+  margin-top: 4rem;
+  font-family: Denton-Bold, Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+}
+
+.faq-section .support-text {
+  color: #777777;
+  text-align: center;
+  font-size: 1.2vw;
+  font-family: "Helvetica Neue", Helvetica, Inter, system-ui, Avenir, Arial,
+    sans-serif;
+}
+.faq-section .footer-title {
+  font-size: 2rem;
+}
+
+.faq-section .support-text {
+  font-size: 1.2rem;
+  width: 90%;
+  margin: 1rem auto 0;
+}
+.faq-section {
+  padding: 2rem 0 1rem;
+}
+
+.faq-section .title {
+  font-size: 2rem;
+}
