@@ -8,7 +8,7 @@ const ContactUs = () => {
       <img src="img/shape.png" className="square" alt="" />
       <div className="form">
         <div className="contact-info">
-          <h3 className="title">Let's get in touch</h3>
+          <h3 className="title overflow-hidden ">Let's get in touch</h3>
           <p className="text">
             Connect with us for expert financial guidance and personalized accounting solutions tailored to your needs.
           </p>

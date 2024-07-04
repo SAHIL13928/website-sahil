@@ -6,11 +6,11 @@ import people from '../assests/people.jpg';
 
 function HeroSection2() {
   return (
-    <section className="bg-[#47A1C6] text-white py-24">
+    <section className="bg-[#47A1C6] my-4 text-white py-24">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="text-center lg:text-left">
-            <h1 className="text-4xl font-bold mb-4">
+            <h1 className="text-4xl overflow-hidden font-bold mb-4">
               We Are The <br /> Leading Legal Company
             </h1>
             <p className="text-lg">
