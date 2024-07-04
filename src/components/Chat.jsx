@@ -46,7 +46,7 @@ const Chat = () => {
                             },
                         }}
                     >
-                        <BsChatRightDots size={24} />
+                        <BsChatRightDots size={24} style={{ color: "blue", fontWeight: "bolder" }} />
                     </IconButton>
                 </div>
             )}

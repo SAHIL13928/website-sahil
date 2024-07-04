@@ -1,10 +1,9 @@
-import React from 'react';
-import './contact.css'; 
+import './contact.css';
 import { FaMobileAlt, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const ContactUs = () => {
   return (
-    <div className="contain">
+    <div className="contain  mt-20" >
       <span className="big-circle"></span>
       <img src="img/shape.png" className="square" alt="" />
       <div className="form">

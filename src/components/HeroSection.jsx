@@ -1,4 +1,3 @@
-import React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
@@ -6,8 +5,7 @@ import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 
-// Import the background image
-import backgroundImage from '../assests/background.jfif'; // Adjust the path as needed
+
 
 const HeroSection = () => {
     return (
@@ -16,15 +14,14 @@ const HeroSection = () => {
             sx={() => ({
                 width: '100%',
                 backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
             })}
         >
-            <Container
+            {/* <Container
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',
-                    alignItems: 'center',
+
                     pt: { xs: 14, sm: 20 },
                     pb: { xs: 8, sm: 12 },
                 }}
@@ -32,15 +29,16 @@ const HeroSection = () => {
                 <Stack spacing={2} useFlexGap sx={{ width: { xs: '100%', sm: '70%' } }}>
                     <Typography
                         variant="h1"
+
                         sx={{
                             display: 'flex',
                             flexDirection: { xs: 'column', md: 'row' },
-                            alignSelf: 'center',
-                            textAlign: 'center',
+                            color: "black",
+
                             fontSize: 'clamp(3.5rem, 10vw, 4rem)',
                         }}
                     >
-                        Welcome To &nbsp;
+                        Welcome To Website
                         <Typography
                             component="span"
                             variant="h1"
@@ -50,7 +48,7 @@ const HeroSection = () => {
                                     theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
                             }}
                         >
-                            My App
+
                         </Typography>
                     </Typography>
                     <Typography
@@ -81,7 +79,7 @@ const HeroSection = () => {
                         </Button>
                     </Stack>
                 </Stack>
-            </Container>
+            </Container> */}
         </Box>
     );
 };
