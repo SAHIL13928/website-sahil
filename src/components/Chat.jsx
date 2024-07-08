@@ -21,8 +21,7 @@ const Chat = () => {
         <Box position="fixed" bottom={16} right={16}>
             {!isOpen && (
                 <div className='flex gap-2'>
-                    <Card elevation={0}>
-
+                    <Card sx={{ border: "1px solid #EBF1F0", bgcolor: "#EBF1F0" }}>
                         <CardContent sx={{ p: 1 }}>
                             <Typography variant="subtitle1" sx={{ fontWeight: "bolder" }}>
                                 Hey There!
@@ -39,8 +38,8 @@ const Chat = () => {
                             p: 2,
                             height: 66,
                             marginTop: 1.7,
-
                             borderRadius: '50%',
+                            boxShadow: 3,
                             '&:hover': {
                                 backgroundColor: 'white',
                             },
@@ -49,6 +48,7 @@ const Chat = () => {
                         <BsChatRightDots size={24} style={{ color: "blue", fontWeight: "bolder" }} />
                     </IconButton>
                 </div>
+
             )}
 
             {isOpen && (

@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import questionMarkImage from '../assests/ttl.png';
 
 const Banner = () => {
@@ -18,8 +18,12 @@ const Banner = () => {
         <p className="text-gray-500 mb-6">
           Talk to our experts to kickstart your business registration process.
         </p>
+
         <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-          Talk to registration expert
+          <Link to="/contact">
+            Talk to registration expert
+          </Link>
+
         </button>
       </div>
     </div>

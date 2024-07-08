@@ -27,6 +27,7 @@ const Navbar = () => {
     setOpenDropdown(menuId);
     setSubAnchorEl(null);
     setOpenSubDropdown(null);
+    document.body.style.overflow = 'hidden';
   };
 
   const handleMenuClose = () => {
@@ -34,6 +35,7 @@ const Navbar = () => {
     setOpenDropdown(null);
     setSubAnchorEl(null);
     setOpenSubDropdown(null);
+    document.body.style.overflow = 'auto';
   };
 
   const handleSubMenuOpen = (event, subMenuId) => {
@@ -46,32 +48,52 @@ const Navbar = () => {
       id: 'start-business',
       label: 'Start your business',
       subItems: [
-        { id: 'subitem1', label: 'Subitem 1', subSubItems: ['SubSubItem 1', 'SubSubItem 2'] },
-        { id: 'subitem2', label: 'Subitem 2', subSubItems: ['SubSubItem 1', 'SubSubItem 2'] },
+        { id: 'subitem1', label: 'Private Limited Company Registration' },
+        { id: 'subitem2', label: 'Public Limited Company Registration' },
+        { id: 'subitem3', label: 'One Person Company Registration' },
+        { id: 'subitem4', label: 'Section 8 Company Registration' },
+        { id: 'subitem5', label: 'Limited Liability Partnership Firm Registration' },
+        { id: 'subitem6', label: 'Partnership Firm Registration' },
+        { id: 'subitem6', label: 'Society Registration' },
+        { id: 'subitem6', label: 'Trust Registration' },
       ],
     },
     {
       id: 'tax-compliances',
       label: 'Tax compliances',
       subItems: [
-        { id: 'subitem1', label: 'Subitem 1', subSubItems: ['SubSubItem 1', 'SubSubItem 2'] },
-        { id: 'subitem2', label: 'Subitem 2', subSubItems: ['SubSubItem 1', 'SubSubItem 2'] },
+        { id: 'subitem1', label: 'GST', subSubItems: ['GST Registration ', 'GST Returns Filing', 'GST Refund', 'GST Annual Return', 'GST Notice Reply', 'GST Audit', 'GST Cancellation'] },
+        { id: 'subitem2', label: 'Income Tax', subSubItems: ['Income Tax Returns (ITR)', 'Income Tax Notice Reply', 'Income Tax Scrutiny', 'Income Tax Appeal to CIT(A)', 'Income Tax Appeal to ITAT', 'Income Tax Audit', 'TDS Return Filing'] },
+
+
+
       ],
     },
     {
       id: 'business-management',
       label: 'Business Management',
       subItems: [
-        { id: 'subitem1', label: 'Subitem 1', subSubItems: ['SubSubItem 1', 'SubSubItem 2'] },
-        { id: 'subitem2', label: 'Subitem 2', subSubItems: ['SubSubItem 1', 'SubSubItem 2'] },
+        { id: 'subitem1', label: 'Virtual CFO Solutions' },
+        { id: 'subitem2', label: 'Licenses & Registrations', subSubItems: ['Startup Registration', 'MSME Registration', 'IEC Code', 'Trade License', 'Digital Signature Certificate', 'Provident Fund (PF) Registration', 'ESI Registration', 'Professional Tax Registration', 'Shops and Establishments License', 'Darpan Registration', 'FCRA Registration', 'Section 12A & 80G Registration'] },
+        { id: 'subitem3', label: 'Company Compliances', subSubItems: ['Annual Company ROC Compliance ', 'Company Audit', 'Appointment of Director', 'Resignation of Director', 'Increase Authorized Capital', 'Share Transfer of a Company', 'Closure the Company', 'Strike off Company', 'Change in Object Clause', 'Change in Address'] },
+        { id: 'subitem4', label: 'Partnership / LLP Compliances', subSubItems: ['Annual LLP ROC Compliance', 'Partnership / LLP Audit', 'Add Designated Partner', 'Remove Designated Partner', 'Changes to Partnership Agreement', 'Dissolution of Partnership Firm', 'Winding Up of LLP'] },
+        { id: 'subitem5', label: 'Convert Your Business', subSubItems: ['Proprietorship to Partnership / LLP', '	Proprietorship to Company', 'Partnership / LLP to Company', 'Private to Public Company'] },
+        { id: 'subitem6', label: 'Accounting Services', subSubItems: ['Accounting and Book-keeping', 'Financial Due Diligence', 'Payroll Services', 'Retirement Planning'] },
       ],
     },
+
+
+
     {
       id: 'valuation-services',
       label: 'Valuation Services',
       subItems: [
-        { id: 'subitem1', label: 'Subitem 1', subSubItems: ['SubSubItem 1', 'SubSubItem 2'] },
-        { id: 'subitem2', label: 'Subitem 2', subSubItems: ['SubSubItem 1', 'SubSubItem 2'] },
+        { id: 'subitem1', label: 'Business Valuation Services' },
+        { id: 'subitem2', label: 'Intangibles Valuation Services' },
+        { id: 'subitem3', label: 'Valuation Under Companies Act' },
+        { id: 'subitem4', label: 'Valuation Under Companies Act' },
+        { id: 'subitem5', label: 'Startup Valuation' },
+        { id: 'subitem6', label: 'M & A Valuations' },
       ],
     },
   ];
@@ -138,72 +160,105 @@ const Navbar = () => {
                       </Typography>
                     </Link>
                   </MenuItem>
-                  {menuItems.map((item) => (
-                    <MenuItem
-                      key={item.id}
-                      sx={{ py: '6px', px: '12px' }}
-                      onClick={(e) => handleMenuOpen(e, item.id)}
+                  {menuItems.map((menuItem) => (
+                    <Box
+                      key={menuItem.id}
+                      onMouseLeave={handleMenuClose}
+                      sx={{
+                        position: 'relative',
+
+                        '&:hover > div': {
+                          display: 'block',
+                        },
+                      }}
                     >
-                      <Typography variant="body2" color="text.primary">
-                        {item.label}
-                      </Typography>
-                      <Menu
-                        anchorEl={anchorEl}
-                        open={openDropdown === item.id}
-                        onClose={handleMenuClose}
-                        MenuListProps={{
-                          onMouseLeave: handleMenuClose,
-                        }}
+                      <Button
+                        onMouseEnter={(e) => handleMenuOpen(e, menuItem.id)}
+                        sx={{ color: 'black', ml: 2 }}
                       >
-                        {item.subItems.map((subItem) => (
-                          <MenuItem
-                            sx={{ backgroundColor: "pink", height: "20vh", width: "20vw" }}
-                            key={subItem.id}
-                            onMouseEnter={(e) => handleSubMenuOpen(e, subItem.id)}
-                            onClick={(e) => handleSubMenuOpen(e, subItem.id)}
-                          >
-                            {subItem.label}
-                            <Menu
-                              anchorEl={subAnchorEl}
-                              open={openSubDropdown === subItem.id}
-                              onClose={handleMenuClose}
-                              anchorOrigin={{
-                                vertical: 'top',
-                                horizontal: 'right',
-                              }}
-                              transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                              }}
-                              MenuListProps={{
-                                onMouseLeave: handleMenuClose,
+                        {menuItem.label}
+                      </Button>
+                      {openDropdown === menuItem.id && (
+                        <Box
+                          onMouseLeave={handleMenuClose}
+                          sx={{
+                            position: 'absolute',
+                            top: '100%',
+                            left: 0,
+                            // bgcolor: 'background.paper',
+                            boxShadow: 3,
+                            bgcolor: "pink",
+                            zIndex: 10,
+                          }}
+                        >
+                          {menuItem.subItems.map((subItem) => (
+                            <MenuItem
+                              key={subItem.id}
+                              onMouseEnter={(e) => handleSubMenuOpen(e, subItem.id)}
+                              sx={{
+
+                                position: 'relative',
+                                '&:hover > div': {
+                                  display: 'block',
+                                },
                               }}
                             >
-                              {subItem.subSubItems.map((subSubItem, index) => (
-                                <MenuItem key={index} onClick={handleMenuClose}
-                                  sx={{ backgroundColor: "red", height: "10vh", width: "20vw" }}
+                              {subItem.label}
+                              {openSubDropdown === subItem.id && subItem.subSubItems && (
+                                <Box
+                                  sx={{
+                                    position: 'absolute',
+                                    top: 0,
+                                    left: '100%',
+                                    // bgcolor: 'background.paper',
+                                    boxShadow: 3,
+                                    bgcolor: "red",
+                                    zIndex: 10,
+                                    display: 'none',
+                                  }}
                                 >
-                                  {subSubItem}
-                                </MenuItem>
-                              ))}
-                            </Menu>
-                          </MenuItem>
-                        ))}
-                      </Menu>
-                    </MenuItem>
+                                  {subItem.subSubItems.map((subSubItem, index) => (
+                                    <MenuItem key={index}>{subSubItem}</MenuItem>
+                                  ))}
+                                </Box>
+                              )}
+                            </MenuItem>
+                          ))}
+                        </Box>
+                      )}
+                    </Box>
                   ))}
                 </Box>
-              </Box>
-              <Box sx={{ display: { sm: '', md: 'none' } }}>
-                <Button
-                  variant="text"
-                  color="primary"
-                  aria-label="menu"
-                  sx={{ minWidth: '30px', p: '4px' }}
+                <Menu
+                  id="menu-appbar"
+                  anchorEl={anchorEl}
+                  anchorOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                  }}
+                  keepMounted
+                  transformOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                  }}
+                  open={Boolean(anchorEl)}
+                  onClose={handleMenuClose}
+                  sx={{
+                    display: { xs: 'block', md: 'none' },
+                  }}
                 >
-                  <MenuIcon />
-                </Button>
+                  {menuItems.map((menuItem) => (
+                    <MenuItem
+                      key={menuItem.id}
+                      onClick={handleMenuClose}
+                      sx={{ color: 'black' }}
+                    >
+                      {menuItem.label}
+                    </MenuItem>
+                  ))}
+                </Menu>
               </Box>
+              <MenuIcon sx={{ color: 'black', ml: 2, display: { xs: 'block', md: 'none' } }} />
             </Toolbar>
           </Container>
         </AppBar>
