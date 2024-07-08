@@ -1,12 +1,12 @@
 import React from 'react'
 
-const ShareTransferOfCompany = () => {
+const ClosureCompany = () => {
     return (
         <div>
-            ShareTransferOfCompany
-            ShareTransferOfCompany
+            ClosureCompany
+            ClosureCompany
         </div>
     )
 }
 
-export default ShareTransferOfCompany
+export default ClosureCompany

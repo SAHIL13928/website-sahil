@@ -1,12 +1,12 @@
 import React from 'react'
 
-const GstNoticeReply = () => {
+const GstCancellation = () => {
     return (
         <div>
-            GstNoticeReply
-            GstNoticeReply
+            GstCancellation
+            GstCancellation
         </div>
     )
 }
 
-export default GstNoticeReply
+export default GstCancellation

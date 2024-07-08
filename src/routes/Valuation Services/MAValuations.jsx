@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const MAValuations = () => {
     return (
-        <div>
+        <div className='mt-24 '>
             MAValuations
             MAValuations
         </div>
