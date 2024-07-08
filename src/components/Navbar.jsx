@@ -1,14 +1,10 @@
 import { useState } from 'react';
-import Box from '@mui/material/Box';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import MenuItem from '@mui/material/MenuItem';
+import { Box, AppBar, Toolbar, Button, Container, Typography, MenuItem, Menu } from '@mui/material';
+
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
-import Menu from '@mui/material/Menu';
+
+import { menuItems } from '../constant/menuItems';
 
 const logoStyle = {
   width: '140px',
@@ -43,60 +39,6 @@ const Navbar = () => {
     setOpenSubDropdown(subMenuId);
   };
 
-  const menuItems = [
-    {
-      id: 'start-business',
-      label: 'Start your business',
-      subItems: [
-        { id: 'subitem1', label: 'Private Limited Company Registration' },
-        { id: 'subitem2', label: 'Public Limited Company Registration' },
-        { id: 'subitem3', label: 'One Person Company Registration' },
-        { id: 'subitem4', label: 'Section 8 Company Registration' },
-        { id: 'subitem5', label: 'Limited Liability Partnership Firm Registration' },
-        { id: 'subitem6', label: 'Partnership Firm Registration' },
-        { id: 'subitem6', label: 'Society Registration' },
-        { id: 'subitem6', label: 'Trust Registration' },
-      ],
-    },
-    {
-      id: 'tax-compliances',
-      label: 'Tax compliances',
-      subItems: [
-        { id: 'subitem1', label: 'GST', subSubItems: ['GST Registration ', 'GST Returns Filing', 'GST Refund', 'GST Annual Return', 'GST Notice Reply', 'GST Audit', 'GST Cancellation'] },
-        { id: 'subitem2', label: 'Income Tax', subSubItems: ['Income Tax Returns (ITR)', 'Income Tax Notice Reply', 'Income Tax Scrutiny', 'Income Tax Appeal to CIT(A)', 'Income Tax Appeal to ITAT', 'Income Tax Audit', 'TDS Return Filing'] },
-
-
-
-      ],
-    },
-    {
-      id: 'business-management',
-      label: 'Business Management',
-      subItems: [
-        { id: 'subitem1', label: 'Virtual CFO Solutions' },
-        { id: 'subitem2', label: 'Licenses & Registrations', subSubItems: ['Startup Registration', 'MSME Registration', 'IEC Code', 'Trade License', 'Digital Signature Certificate', 'Provident Fund (PF) Registration', 'ESI Registration', 'Professional Tax Registration', 'Shops and Establishments License', 'Darpan Registration', 'FCRA Registration', 'Section 12A & 80G Registration'] },
-        { id: 'subitem3', label: 'Company Compliances', subSubItems: ['Annual Company ROC Compliance ', 'Company Audit', 'Appointment of Director', 'Resignation of Director', 'Increase Authorized Capital', 'Share Transfer of a Company', 'Closure the Company', 'Strike off Company', 'Change in Object Clause', 'Change in Address'] },
-        { id: 'subitem4', label: 'Partnership / LLP Compliances', subSubItems: ['Annual LLP ROC Compliance', 'Partnership / LLP Audit', 'Add Designated Partner', 'Remove Designated Partner', 'Changes to Partnership Agreement', 'Dissolution of Partnership Firm', 'Winding Up of LLP'] },
-        { id: 'subitem5', label: 'Convert Your Business', subSubItems: ['Proprietorship to Partnership / LLP', '	Proprietorship to Company', 'Partnership / LLP to Company', 'Private to Public Company'] },
-        { id: 'subitem6', label: 'Accounting Services', subSubItems: ['Accounting and Book-keeping', 'Financial Due Diligence', 'Payroll Services', 'Retirement Planning'] },
-      ],
-    },
-
-
-
-    {
-      id: 'valuation-services',
-      label: 'Valuation Services',
-      subItems: [
-        { id: 'subitem1', label: 'Business Valuation Services' },
-        { id: 'subitem2', label: 'Intangibles Valuation Services' },
-        { id: 'subitem3', label: 'Valuation Under Companies Act' },
-        { id: 'subitem4', label: 'Valuation Under Companies Act' },
-        { id: 'subitem5', label: 'Startup Valuation' },
-        { id: 'subitem6', label: 'M & A Valuations' },
-      ],
-    },
-  ];
 
   return (
     <>
