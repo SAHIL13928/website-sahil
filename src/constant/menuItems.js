@@ -197,7 +197,7 @@ export const menuItems = [
         ],
         links: [
           "proprietorship-to-patnership-llp",
-          "	proprietorship-to-company",
+          "proprietorship-to-company",
           "partnership-or-llp-company",
           "private-to-public-company",
         ],
@@ -213,7 +213,7 @@ export const menuItems = [
         ],
         links: [
           "accounting-and-book-keeping",
-          "financial-due-filigence",
+          "financial-due-diligence",
           "payroll-services",
           "retirement-planning",
         ],

@@ -3,8 +3,8 @@ import React from 'react'
 const GstAudit = () => {
     return (
         <div>
-            GstNoticeReply
-            GstNoticeReply
+            GStAUdit
+            GStAUdit
         </div>
     )
 }

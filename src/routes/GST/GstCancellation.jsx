@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const GstCancellation = () => {
     return (
-        <div>
+        <div className='mt-24'>
             GstCancellation
             GstCancellation
         </div>
