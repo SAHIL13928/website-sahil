@@ -3,6 +3,7 @@ import { Box, AppBar, Toolbar, Button, Container, Typography, MenuItem, Menu } f
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
 import { menuItems } from '../constant/menuItems';
+import { FaChevronDown, FaChevronUp, FaChevronRight } from "react-icons/fa6";
 
 const logoStyle = {
   width: '140px',
@@ -120,9 +121,9 @@ const Navbar = () => {
                     >
                       <Button
                         onMouseEnter={(e) => handleMenuOpen(e, menuItem.id)}
-                        sx={{ color: 'black', ml: 2 }}
+                        sx={{ color: 'black', ml: 2, textTransform: "inherit" }}
                       >
-                        {menuItem.label}
+                        {menuItem.label} {openDropdown === menuItem.id ? <FaChevronUp className="ml-2" /> : <FaChevronDown className="ml-2" />}
                       </Button>
                       {openDropdown === menuItem.id && (
                         <Box
@@ -147,8 +148,8 @@ const Navbar = () => {
                                 },
                               }}
                             >
-                              <Link to={`/${subItem.link}`} style={{ textDecoration: 'none', color: 'black' }}>
-                                {subItem.label}
+                              <Link to={`/${subItem.link}`} style={{ textDecoration: 'none', color: 'black', display: "flex", gap: "18px", alignItems: "center" }}>
+                                {subItem.label} {openSubDropdown === subItem.id ? <FaChevronRight /> : null}
                               </Link>
                               {openSubDropdown === subItem.id && subItem.subSubItems && (
                                 <Box

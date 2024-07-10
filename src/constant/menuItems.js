@@ -1,7 +1,7 @@
 export const menuItems = [
   {
     id: "start-business",
-    label: "Start your business",
+    label: "Start your Business",
     subItems: [
       {
         id: "subitem1",
@@ -47,7 +47,7 @@ export const menuItems = [
   },
   {
     id: "tax-compliances",
-    label: "Tax compliances",
+    label: "Tax Compliances",
     subItems: [
       {
         id: "subitem1",
