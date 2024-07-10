@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const EsiReg = () => {
     return (
-        <div>
+        <div className='mt-32 h-[50vh]'>
             EsiReg
             EsiReg
         </div>

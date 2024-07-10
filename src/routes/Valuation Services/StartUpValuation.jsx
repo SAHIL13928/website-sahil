@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const StartUpValuation = () => {
     return (
-        <div>
+        <div className='mt-32 h-[50vh]'>
             StartUpValuation
             StartUpValuation
         </div>

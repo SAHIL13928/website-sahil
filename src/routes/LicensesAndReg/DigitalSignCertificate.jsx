@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const DigitalSignCertificate = () => {
     return (
-        <div>
+        <div className='mt-32 h-[50vh]'>
             DigitalSignCertificate
             DigitalSignCertificate
         </div>

@@ -34,12 +34,12 @@ export const menuItems = [
         link: "partnership-firm-registration",
       },
       {
-        id: "subitem6",
+        id: "subitem7",
         label: "Society Registration",
         link: "society-registration",
       },
       {
-        id: "subitem6",
+        id: "subitem8",
         label: "Trust Registration",
         link: "trust-registration",
       },

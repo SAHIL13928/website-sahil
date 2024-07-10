@@ -1,7 +1,7 @@
 
 const LimitedLiabilityReg = () => {
     return (
-        <div>
+        <div className='mt-32 h-[50vh]'>
             LimitedLiabilityReg
             LimitedLiabilityReg
         </div>

@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const ValuationUnderCompaniesAct = () => {
     return (
-        <div>
+        <div className='mt-32 h-[50vh]'>
             IntangiblesValuation
             IntangiblesValuation
         </div>

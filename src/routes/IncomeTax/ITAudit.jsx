@@ -1,8 +1,7 @@
-import React from 'react'
 
 const ITAudit = () => {
     return (
-        <div>
+        <div className='mt-32 h-[50vh]'>
             ITAudit
             ITAudit
         </div>

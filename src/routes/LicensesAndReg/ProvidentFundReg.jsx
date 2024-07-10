@@ -1,9 +1,8 @@
 
-import React from 'react'
 
 const ProvidentFundReg = () => {
     return (
-        <div>
+        <div className='mt-32 h-[50vh]'>
             ProvidentFundReg
             ProvidentFundReg
         </div>

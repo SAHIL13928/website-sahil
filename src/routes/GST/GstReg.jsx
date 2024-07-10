@@ -1,8 +1,7 @@
-import React from 'react'
 
 const GstReg = () => {
     return (
-        <div>
+        <div className='mt-32 h-[50vh]'>
             GstReg
             GstReg
         </div>

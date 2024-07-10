@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const ITNoticeReply = () => {
     return (
-        <div>
+        <div className='mt-32 h-[50vh]'>
             ITNoticeReply
             ITNoticeReply
         </div>

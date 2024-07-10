@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const IncAuthorizedCapital = () => {
     return (
-        <div>
+        <div className='mt-32 h-[50vh]'>
             IncAuthorizedCapital
             IncAuthorizedCapital
         </div>

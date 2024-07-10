@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const ResignationOfDir = () => {
     return (
-        <div>
+        <div className='mt-32 h-[50vh]'>
             ResignationOfDir
             ResignationOfDir
         </div>

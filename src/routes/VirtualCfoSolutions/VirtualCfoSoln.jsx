@@ -1,8 +1,7 @@
-import React from 'react'
 
 const VirtualCfoSoln = () => {
     return (
-        <div>
+        <div className='mt-32 h-[50vh]'>
             VirtualCfoSoln
             VirtualCfoSoln
         </div>

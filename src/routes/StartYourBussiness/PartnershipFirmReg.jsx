@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const PartnershipFirmReg = () => {
     return (
-        <div>
+        <div className='mt-32 h-[50vh]'>
             PartnershipFirmReg
             PartnershipFirmReg
         </div>

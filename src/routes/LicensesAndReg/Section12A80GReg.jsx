@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const Section12A80GReg = () => {
     return (
-        <div>
+        <div className='mt-32 h-[50vh]'>
             Section12A80GReg
             Section12A80GReg
         </div>

@@ -1,7 +1,7 @@
 
 const PublicCompanyReg = () => {
     return (
-        <div>
+        <div className='mt-32 h-[50vh]'>
             PublicCompanyReg
             PublicCompanyReg
         </div>

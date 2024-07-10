@@ -2,7 +2,7 @@ import React from 'react'
 
 const AnnualCompanyRocCompliance = () => {
     return (
-        <div>
+        <div className='mt-32 h-[50vh]'>
             AnnualCompanyRocCompliance
             AnnualCompanyRocCompliance
         </div>

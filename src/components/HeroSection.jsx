@@ -17,16 +17,16 @@ const HeroSection = () => {
                 backgroundRepeat: 'no-repeat'
             })}
         >
-            {/* <Container
+            <Container
                 sx={{
                     display: 'flex',
-                    flexDirection: 'column',
+
 
                     pt: { xs: 14, sm: 20 },
                     pb: { xs: 8, sm: 12 },
                 }}
             >
-                <Stack spacing={2} useFlexGap sx={{ width: { xs: '100%', sm: '70%' } }}>
+                <Stack sx={{ width: "50%" }}>
                     <Typography
                         variant="h1"
 
@@ -38,7 +38,7 @@ const HeroSection = () => {
                             fontSize: 'clamp(3.5rem, 10vw, 4rem)',
                         }}
                     >
-                        Welcome To Website
+                        Welcome To
                         <Typography
                             component="span"
                             variant="h1"
@@ -46,9 +46,10 @@ const HeroSection = () => {
                                 fontSize: 'clamp(3rem, 10vw, 4rem)',
                                 color: (theme) =>
                                     theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
+                                ml: "12px"
                             }}
                         >
-
+                            Website
                         </Typography>
                     </Typography>
                     <Typography
@@ -56,7 +57,7 @@ const HeroSection = () => {
                         color="text.secondary"
                         sx={{ alignSelf: 'center', width: { sm: '100%', md: '80%' } }}
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nobis quam earum a natus. Dolor voluptate labore illum deleniti rem.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nobis quam earum a natus. Dolor voluptate labore illum deleniti.
                     </Typography>
                     <Stack
                         direction={{ xs: 'column', sm: 'row' }}
@@ -66,11 +67,17 @@ const HeroSection = () => {
                         sx={{ pt: 2, width: { xs: '100%', sm: 'auto' } }}
                     >
                         <TextField
-                            id="outlined-basic"
+
                             fullWidth
                             hiddenLabel
-                            sx={{ width: "28rem" }}
-                            variant="outlined"
+                            sx={{
+                                width: "35rem",
+                                borderRadius: '1.4rem',
+                                '& .MuiOutlinedInput-root': {
+                                    borderRadius: '1.6rem',
+                                }
+                            }}
+
                             aria-label="Enter your email address"
                             placeholder="Your email address"
                         />
@@ -78,8 +85,12 @@ const HeroSection = () => {
                             Start now
                         </Button>
                     </Stack>
+
                 </Stack>
-            </Container> */}
+
+                <img src="./suit.jpg" alt="" className='w-[40vw] ml-32 h-[75vh]' />
+
+            </Container>
         </Box>
     );
 };

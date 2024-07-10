@@ -1,8 +1,7 @@
-import React from 'react'
 
 const OnePersonCompanyReg = () => {
     return (
-        <div>
+        <div className='mt-32 h-[50vh]'>
             OnePersonCompanyReg
             OnePersonCompanyReg
         </div>

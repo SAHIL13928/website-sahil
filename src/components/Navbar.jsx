@@ -1,9 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Box, AppBar, Toolbar, Button, Container, Typography, MenuItem, Menu } from '@mui/material';
-
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
-
 import { menuItems } from '../constant/menuItems';
 
 const logoStyle = {
@@ -17,6 +15,13 @@ const Navbar = () => {
   const [subAnchorEl, setSubAnchorEl] = useState(null);
   const [openDropdown, setOpenDropdown] = useState(null);
   const [openSubDropdown, setOpenSubDropdown] = useState(null);
+
+  useEffect(() => {
+    // Reset overflow style on component unmount
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
 
   const handleMenuOpen = (event, menuId) => {
     setAnchorEl(event.currentTarget);
@@ -38,7 +43,6 @@ const Navbar = () => {
     setSubAnchorEl(event.currentTarget);
     setOpenSubDropdown(subMenuId);
   };
-
 
   return (
     <>
@@ -127,9 +131,8 @@ const Navbar = () => {
                             position: 'absolute',
                             top: '100%',
                             left: 0,
-                            // bgcolor: 'background.paper',
                             boxShadow: 3,
-                            bgcolor: "pink",
+                            bgcolor: "blue",
                             zIndex: 10,
                           }}
                         >
@@ -138,21 +141,21 @@ const Navbar = () => {
                               key={subItem.id}
                               onMouseEnter={(e) => handleSubMenuOpen(e, subItem.id)}
                               sx={{
-
                                 position: 'relative',
                                 '&:hover > div': {
                                   display: 'block',
                                 },
                               }}
                             >
-                              {subItem.label}
+                              <Link to={`/${subItem.link}`} style={{ textDecoration: 'none', color: 'black' }}>
+                                {subItem.label}
+                              </Link>
                               {openSubDropdown === subItem.id && subItem.subSubItems && (
                                 <Box
                                   sx={{
                                     position: 'absolute',
                                     top: 0,
                                     left: '100%',
-                                    // bgcolor: 'background.paper',
                                     boxShadow: 3,
                                     bgcolor: "red",
                                     zIndex: 10,
@@ -160,7 +163,11 @@ const Navbar = () => {
                                   }}
                                 >
                                   {subItem.subSubItems.map((subSubItem, index) => (
-                                    <MenuItem key={index}>{subSubItem}</MenuItem>
+                                    <MenuItem key={index}>
+                                      <Link to={`/${subItem.links[index]}`} style={{ textDecoration: 'none', color: 'black' }}>
+                                        {subSubItem}
+                                      </Link>
+                                    </MenuItem>
                                   ))}
                                 </Box>
                               )}

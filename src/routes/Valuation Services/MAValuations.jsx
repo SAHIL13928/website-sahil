@@ -2,7 +2,7 @@
 
 const MAValuations = () => {
     return (
-        <div className='mt-24 '>
+        <div className='mt-32 '>
             MAValuations
             MAValuations
         </div>
