@@ -20,13 +20,18 @@ body {
 }
 
 #hero {
-  /* background-image: url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1911&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  background-image: url("https://t3.ftcdn.net/jpg/01/19/67/02/360_F_119670247_HDccziQUuo2kFpaNiM22dIto5I8GPAWW.jpg");
   /* background-image: url("/heroImg.jpg"); */
-  /* background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
-  height: 100vh; */
-  /* background-color: aquamarine; */
-  background: linear-gradient(to bottom, #87ceeb, #ffffff);
   height: 100vh;
+  /* background-color: aquamarine; */
+  /* background: linear-gradient(to bottom, #87ceeb, #ffffff);
+  height: 100vh; */
+}
+.dropdown {
+  background-image: url("https://t3.ftcdn.net/jpg/01/19/67/02/360_F_119670247_HDccziQUuo2kFpaNiM22dIto5I8GPAWW.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }

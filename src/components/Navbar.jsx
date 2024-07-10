@@ -127,13 +127,14 @@ const Navbar = () => {
                       </Button>
                       {openDropdown === menuItem.id && (
                         <Box
+                          className="dropdown"
                           onMouseLeave={handleMenuClose}
                           sx={{
                             position: 'absolute',
                             top: '100%',
                             left: 0,
                             boxShadow: 3,
-                            bgcolor: "blue",
+
                             zIndex: 10,
                           }}
                         >
@@ -153,12 +154,13 @@ const Navbar = () => {
                               </Link>
                               {openSubDropdown === subItem.id && subItem.subSubItems && (
                                 <Box
+                                  className="dropdown"
                                   sx={{
                                     position: 'absolute',
                                     top: 0,
                                     left: '100%',
                                     boxShadow: 3,
-                                    bgcolor: "red",
+
                                     zIndex: 10,
                                     display: 'none',
                                   }}
