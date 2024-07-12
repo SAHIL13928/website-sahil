@@ -1,9 +1,10 @@
 .faq-section {
-  background-color: #eeeedd66;
-  padding: 4rem 0 4rem;
+  background-color: #819dfae8; /* Background color with opacity */
+  padding: 4rem 0; /* Adjusted padding */
 }
 
 .faq-section .title {
+  overflow: hidden;
   font-size: 2.6vw;
   font-family: Denton-Bold, Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
@@ -62,19 +63,14 @@
   font-family: "Helvetica Neue", Helvetica, Inter, system-ui, Avenir, Arial,
     sans-serif;
 }
-.faq-section .footer-title {
-  font-size: 2rem;
+
+/* Arrow icon styles */
+.accordion-icon {
+  width: 20px; /* Adjust icon size */
+  height: 20px; /* Adjust icon size */
+  transition: transform 0.3s ease; /* Smooth transition for icon rotation */
 }
 
-.faq-section .support-text {
-  font-size: 1.2rem;
-  width: 90%;
-  margin: 1rem auto 0;
-}
-.faq-section {
-  padding: 2rem 0 1rem;
-}
-
-.faq-section .title {
-  font-size: 2rem;
+.acc-button[aria-expanded="true"] .accordion-icon {
+  transform: rotate(180deg); /* Rotate icon when accordion item is expanded */
 }

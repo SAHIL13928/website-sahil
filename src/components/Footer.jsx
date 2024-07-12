@@ -52,7 +52,7 @@ export default function Footer() {
                     color: 'white',
                     width: '50%',
                     padding: 2,
-                    
+
                 }}
             >
                 <Box sx={{ ml: '-15px' }}>
@@ -96,12 +96,12 @@ export default function Footer() {
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    gap: { xs: 2, sm: 3 }, 
-                    py: { xs: 4, sm: 5 }, 
+                    gap: { xs: 2, sm: 3 },
+                    py: { xs: 4, sm: 5 },
                     backgroundColor: 'white',
                     width: '50%',
                     padding: 2,
-                   
+
                 }}
             >
                 <Box

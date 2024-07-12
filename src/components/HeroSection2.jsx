@@ -3,7 +3,6 @@ import bookshelf from '../assests/bookshelf.jpg';
 import documents from '../assests/documents.jpg';
 import laptop from '../assests/laptop.jpg';
 import people from '../assests/people.jpg';
-import { Link } from 'react-router-dom';
 
 function HeroSection2() {
   return (
@@ -26,12 +25,12 @@ function HeroSection2() {
               Just call us, we can answer all your questions.
             </p>
             <div className="mt-4 flex justify-center lg:justify-start">
-              <Link
-                to="/contact"
+              <a
+                href="#"
                 className="bg-white hover:bg-blue-700 text-black font-bold py-2 px-4 rounded-full"
               >
                 Call Us
-              </Link>
+              </a>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
