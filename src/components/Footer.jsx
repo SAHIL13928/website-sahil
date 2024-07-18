@@ -38,6 +38,7 @@ export default function Footer() {
                 textAlign: { sm: 'center', md: 'left' },
                 padding: 0,
                 width: '100%',
+                marginTop: "5rem"
             }}
         >
             {/* Left Section */}
