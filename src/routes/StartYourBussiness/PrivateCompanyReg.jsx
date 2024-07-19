@@ -1,5 +1,4 @@
-import Typography from '@mui/material/Typography'
-import { Box, Card, CardContent, List, ListItem, ListItemText, Container } from '@mui/material'
+import { Box, Card, CardContent, List, ListItem, ListItemText, Container, Typography } from '@mui/material'
 
 
 const PrivateCompanyReg = () => {
