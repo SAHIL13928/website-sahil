@@ -6,7 +6,7 @@ import people from '../assests/people.jpg';
 
 function HeroSection2() {
   return (
-    <section className="bg-[#47A1C6] my-4 text-white py-24">
+    <section className="bg-[#3bc4ff] my-4 text-white py-24 px-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="text-center lg:text-left">

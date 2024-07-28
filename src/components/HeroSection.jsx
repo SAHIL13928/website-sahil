@@ -81,7 +81,7 @@ const HeroSection = () => {
                             aria-label="Enter your email address"
                             placeholder="Your email address"
                         />
-                        <Button disableElevation sx={{ width: "8rem", }} variant="contained" color="primary">
+                        <Button disableElevation sx={{ width: "8rem", bgcolor: "#000aa3" }} variant="contained" >
                             Start now
                         </Button>
                     </Stack>

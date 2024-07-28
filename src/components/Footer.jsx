@@ -49,7 +49,7 @@ export default function Footer() {
                     alignItems: 'center',
                     gap: { xs: 1, sm: 1 }, // Reduce the gap between elements
                     py: { xs: 4, sm: 5 }, // Reduce the padding
-                    backgroundColor: 'darkblue',
+                    backgroundColor: '#3bc4ff',
                     color: 'white',
                     width: '50%',
                     padding: 2,
@@ -86,7 +86,7 @@ export default function Footer() {
                         }}
                         sx={{ backgroundColor: 'white' }}
                     />
-                    <Button variant="contained" color="primary" sx={{ flexShrink: 0 }}>
+                    <Button variant="contained" sx={{ flexShrink: 0, bgcolor: "#000aa3" }}>
                         Subscribe
                     </Button>
                 </Stack>

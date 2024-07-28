@@ -169,7 +169,7 @@ const PrivateCompanyReg = () => {
 
             </div>
             <div className='mt-16'>
-                <Card elevation={4} sx={{ p: "1.2rem", backgroundColor: "lightBlue", borderRadius: "20px", width: "90vw" }}>
+                <Card elevation={4} sx={{ p: "1.2rem", backgroundColor: "#3bc4ff", borderRadius: "20px", width: "90vw" }}>
                     <Typography variant="h5" color="initial">
                         Documnets Required
                     </Typography>

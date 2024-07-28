@@ -100,7 +100,7 @@ const Navbar = () => {
                   />
                 </Link>
                 <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                  <MenuItem sx={{ py: '6px', px: '12px', bgcolor: "blue", color: "white", borderRadius: "16px", fontWeight: "bolder" }}>
+                  <MenuItem sx={{ py: '6px', px: '12px', bgcolor: "#000aa3", color: "white", borderRadius: "16px", fontWeight: "bolder", }}>
                     <Link to="/contact" style={{ textDecoration: 'none' }}>
                       <Typography variant="body2" >
                         Consult an Expert
