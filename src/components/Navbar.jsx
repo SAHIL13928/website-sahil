@@ -18,18 +18,18 @@ const Navbar = () => {
   const [openSubDropdown, setOpenSubDropdown] = useState(null);
 
   useEffect(() => {
-    // Reset overflow style on component unmount
-    return () => {
+    if (openDropdown !== null) {
+      document.body.style.overflow = 'hidden';
+    } else {
       document.body.style.overflow = 'auto';
-    };
-  }, []);
+    }
+  }, [openDropdown]);
 
   const handleMenuOpen = (event, menuId) => {
     setAnchorEl(event.currentTarget);
     setOpenDropdown(menuId);
     setSubAnchorEl(null);
     setOpenSubDropdown(null);
-    document.body.style.overflow = 'hidden';
   };
 
   const handleMenuClose = () => {
@@ -37,7 +37,6 @@ const Navbar = () => {
     setOpenDropdown(null);
     setSubAnchorEl(null);
     setOpenSubDropdown(null);
-    document.body.style.overflow = 'auto';
   };
 
   const handleSubMenuOpen = (event, subMenuId) => {
